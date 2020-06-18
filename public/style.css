@@ -1,3 +1,7 @@
+/* ------------------------------------------------------------------------ #BODY ----------------------------------------------------------------------------------------------*/
+body{ 
+    background-color: lightgray;
+}
 /* ------------------------------------------------------------------------ #FOOTER ----------------------------------------------------------------------------------------------*/
 
 footer 
@@ -6,6 +10,14 @@ footer
     justify-content: space-around;
     width: 80%;
     margin: auto;
+}
+.blocfoot { 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #735747;
+    padding-top: 1%;
+    color: white;
 }
 /* ------------------------------------------------------------------------ #ACUEIL ----------------------------------------------------------------------------------------------*/
 .important { 
@@ -20,6 +32,27 @@ footer
 }
 .actualityBloc { 
     margin-bottom: 5%;
+}
+.table { 
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+}
+.infoBloc {
+    width: 30%;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.nav { 
+    background-color: #735747;
+    color: white;
+}
+.navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+    color:white;
+}
+.navbar-light .navbar-brand {
+    color: greenyellow;
 }
 /* ------------------------------------------------------------------------ #CONNECT ----------------------------------------------------------------------------------------------*/
 

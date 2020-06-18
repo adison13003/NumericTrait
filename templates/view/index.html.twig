@@ -1,7 +1,7 @@
 {% extends "base.html.twig" %}
 {# BLOC MESSAGE ACCUEIL#}
 {% block one %}
-<table class="table table-hover">
+<table class="table table-info">
     <thead>
       <tr>
         <th scope="col">Equipe</th>
@@ -14,7 +14,7 @@
     <tbody>
       {# AFFICHAGE DES TACHES#}
       {% for tache in taches %}
-        <tr class="table-active">
+        <tr class="table-active table">
           <th scope="row">{{ tache.name}} </th>
           <td> {{tache.city }}</td>
           <td>{{ tache.type }} </td>
@@ -30,7 +30,7 @@
 
 {# BLOC INFORMATION #}
 {% block two %}
-<div class="alert alert-dismissible alert-warning">
+<div class="alert alert-dismissible alert-warning infoBloc">
   <h4 class="alert-heading">INFOS !</h4>
   <p class="mb-0">Le depot ferme exclusivement ses portes demain a 16h donc veuillez etre present pour cette heure ci</a>.</p>
 </div>

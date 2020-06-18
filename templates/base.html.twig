@@ -1,57 +1,75 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Mon blog{% endblock %}</title>
-        {% block stylesheets %}
-         <link rel="stylesheet" href="https://bootswatch.com/4/sandstone/bootstrap.min.css">
-         <link rel="stylesheet" href="style.css">
-         {% endblock %}
-    </head>
-    <body>
-{# Navbar #}
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="/">NumericTrait</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarColor03">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="/admin">Admin<span class="sr-only">(current)</span></a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-{# Fin navbar #}
-        {% block one %}
-        {% endblock %}
-        {% block two %}
-        {% endblock %}
-{# Footer #}
-<hr>
-<footer>
-<div class="footerCard"> 
-    <h4> Infos </h4>  
-    <p> lorem </p>
-    <p> lorem </p>
-    <p> lorem </p>
-</div>
-<div class="footerCard"> 
-    <h4> lorem  </h4>
-    <p> lorem </p>
-    <p> lorem </p>
-    <p> lorem </p>
-</div>
-<div class="footerCard"> 
-    <h4> lorem </h4>
-    <p> lorem </p>
-    <p> lorem </p>
-    <p> lorem </p>
-</div>
-</footer>
-{# Fin footer #}
-     {% block javascripts %}{% endblock %}
-    </body>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}Mon blog
+			{% endblock %}
+		</title>
+		{% block stylesheets %}
+			<link rel="stylesheet" href="https://bootswatch.com/4/sandstone/bootstrap.min.css">
+			<link rel="stylesheet" href="style.css">
+		{% endblock %}
+	</head>
+
+	<body>
+		{# Navbar #}
+		<nav class="navbar navbar-expand-lg navbar-light nav">
+			<a class="navbar-brand whiteText" href="/">NumericTrait</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarColor03">
+				<ul class="navbar-nav mr-auto whiteText">
+					<li class="nav-item active whiteText">
+						<a class="nav-link" href="/admin">Admin<span class="sr-only">(current)</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		{# Fin navbar #}
+		{% block one %}{% endblock %}
+		{% block two %}{% endblock %}
+		{# Footer #}
+		<div class="blocfoot">
+			<footer>
+				<div class="footerCard">
+					<h4>
+						Infos
+					</h4>
+					<p>
+						Responsable travaux : 06 58 78 98 98
+					</p>
+					<p>
+						Accueil : 04 56 96 89 87
+					</p>
+					<p>
+						Compta : 04 87 85 48 78
+					</p>
+				</div>
+				<div class="footerCard">
+					<h4>
+						Horraires et ouverture
+					</h4>
+					<p>
+						Lundi - Vendredi
+					</p>
+					<p>
+						8h - 17h
+					</p>
+				</div>
+				<div class="footerCard">
+					<h4>
+						Numeric Wave
+					</h4>
+				</div>
+			</footer>
+		</div>
+		{# Fin footer #}
+		{% block javascripts %}{% endblock %}
+	</body>
+
 </html>
