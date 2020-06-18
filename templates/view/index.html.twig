@@ -1,0 +1,38 @@
+{% extends "base.html.twig" %}
+{# BLOC MESSAGE ACCUEIL#}
+{% block one %}
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Equipe</th>
+        <th scope="col">Lieu</th>
+        <th scope="col">Type</th>
+        <th scope="col">Contact</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      {# AFFICHAGE DES TACHES#}
+      {% for tache in taches %}
+        <tr class="table-active">
+          <th scope="row">{{ tache.name}} </th>
+          <td> {{tache.city }}</td>
+          <td>{{ tache.type }} </td>
+          <td>{{ tache.contact }}</td>
+          <td>{{ tache.description }}</td>
+        </tr>
+      {% endfor %}
+      {# FIN AFFICHAGE DES TACHES#}
+    </tbody>
+  </table> 
+{% endblock %}
+{# FIN DU BLOC MESSAGE #}
+
+{# BLOC INFORMATION #}
+{% block two %}
+<div class="alert alert-dismissible alert-warning">
+  <h4 class="alert-heading">INFOS !</h4>
+  <p class="mb-0">Le depot ferme exclusivement ses portes demain a 16h donc veuillez etre present pour cette heure ci</a>.</p>
+</div>
+{% endblock %}
+{# FIN BLOC INFORMATION #}
